@@ -1,0 +1,351 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Security Executions Code</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="https://media.discordapp.net/attachments/563338710918234112/574956098717614090/1557150576615.png?width=468&height=468" type="image/png"></head>
+
+  <body>
+    <div id="loading">
+      <div id="spinner"></div>
+    </div>
+    <div id="profile">
+      <div id="profile_img" style="background: url(https://media.discordapp.net/attachments/563338710918234112/574956098717614090/1557150576615.png?width=468&height=468) center;"></div>
+      <div id="username"><span style="display:block;">Pwn0sec</span><a href="https://github.com/pwn0sec">@pwn0sec</a></div>
+      <div id="userbio" style="display: none;">undefined</div>
+      <div id="about">
+                <span style="display:none;"><i class="fas fa-users"></i> &nbsp; null</span>
+                <span style="display:none;"><i class="fas fa-envelope"></i> &nbsp; null</span>
+                <span style="display:block;"><i class="fas fa-link"></i> &nbsp; <a href="https://pwn0day.com/">https://pwn0day.com/</a></span>
+                <span style="display:block;"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; Indonesia</span>
+                <span style="display:block;"><i class="fas fa-user-tie"></i> &nbsp;&nbsp; Security Researcher</span>
+                <div class="socials">
+                <span style="display:block;"><a href="https://twitter.com/pwn0sec" target="_blank" class="socials"><i class="fab fa-twitter"></i></a></span>
+                <span style="display:block;"><a href="https://www.twitch.tv/pwn0sec" target="_blank" class="socials"><i class="fab fa-dribbble"></i></a></span>
+                <span style="display:block;"><a href="https://www.linkedin.com/in/andri-wahyudi-a3a250194" target="_blank" class="socials"><i class="fab fa-linkedin-in"></i></a></span>
+                <span style="display:none !important;"><a href="https://www.medium.com/@null/" target="_blank" class="socials"><i class="fab fa-medium-m"></i></a></span>
+                </div>
+                </div>
+    </div>
+    <div id="display">
+      <div id="work">
+        <h1>Work.</h1>
+        <div class="projects" id="work_section">
+                        <a href="https://github.com/pwn0sec/PwnXSS" target="_blank">
+                        <section>
+                            <div class="section_title">PwnXSS</div>
+                            <div class="about_section">
+                            <span style="display:block;"><img src="https://github.githubassets.com/images/icons/emoji/octocat.png?v8" class="emoji"> A powerful XSS scanner made in python 3.7</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 4056</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 332</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/andripwn/PayloadsAll" target="_blank">
+                        <section>
+                            <div class="section_title">all payloads</div>
+                            <div class="about_section">
+                            <span style="display:block;"><img src="https://github.githubassets.com/images/icons/emoji/octocat.png?v8" class="emoji"> A list of useful payloads and bypass for Web Application Security and Pentest/CTF</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; TXT</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 209</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 21</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/andripwn/AppleValid" target="_blank">
+                        <section>
+                            <div class="section_title">apple</div>
+                            <div class="about_section">
+                            <span style="display:block;">Apple Email Validator</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 53</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 2</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/andripwn/Kubolt" target="_blank">
+                        <section>
+                            <div class="section_title">kubolt</div>
+                            <div class="about_section">
+                            <span style="display:block;">🚀 Kubolt utility for scanning public kubernetes clusters</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 17</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 6</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/andripwn/rce" target="_blank">
+                        <section>
+                            <div class="section_title">wsrce</div>
+                            <div class="about_section">
+                            <span style="display:block;">👨‍💻 A Simple Web Shell used for Remote Code Execution</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; PHP</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 13</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 2</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/andripwn/instake" target="_blank">
+                        <section>
+                            <div class="section_title">instake</div>
+                            <div class="about_section">
+                            <span style="display:block;"> Instagram Auto Downloader (photos, videos, profile picture)</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Bash</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 13</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/andripwn/Theme" target="_blank">
+                        <section>
+                            <div class="section_title">hyper-theme</div>
+                            <div class="about_section">
+                            <span style="display:block;"> hyper-theme</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 9</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 1</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/andripwn/SSH-export-DB" target="_blank">
+                        <section>
+                            <div class="section_title">snakeflash</div>
+                            <div class="about_section">
+                            <span style="display:block;">Snakeflash adalah sebuah script auto export dan import database dari database local ke database server yang dikoneksikan melalui jalur SSH.</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 8</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 1</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://gist.github.com/andripwn/3559e5637604f4b1028d39275789ef93/revisions" target="_blank">
+                        <section>
+                            <div class="section_title">ssrf#1</div>
+                            <div class="about_section">
+                            <span style="display:block;">A payoads of Server Side Request Forgery (SSRF) 🎉</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 8</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 4</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCE6m8NXHUHnquIMU1ZPd3qQ/videos" target="_blank">
+                        <section>
+                            <div class="section_title">poc write-ups</div>
+                            <div class="about_section">
+                            <span style="display:block;">🎵 All Bug Bounty POC write ups by Pwn0sec</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; VIDEO</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 8</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://gist.github.com/andripwn/bd99408ab75dfba4372b65eb560a1d9c/revisions" target="_blank">
+                        <section>
+                            <div class="section_title">Jetleak</div>
+                            <div class="about_section">
+                            <span style="display:block;"> Script to test if a server is vulnerable to the JetLeak vulnerability
+                            </span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 5</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://gist.github.com/andripwn/5af2fa453a0cb38452534565bf0efadf/revisions" target="_blank">
+                        <section>
+                            <div class="section_title">phpmyadmin-rce</div>
+                            <div class="about_section">
+                            <span style="display:block;"> PHPMyAdmin Remote Code Executions (RCE)</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 3</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 2</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/andripwn/SMS-Python" target="_blank">
+                        <section>
+                            <div class="section_title">sms-python</div>
+                            <div class="about_section">
+                            <span style="display:block;"> Send SMS using Python with Twilio API</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; CSS</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 2</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 1</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/andripwn/DellSupportAssist-RCE-PoC" target="_blank">
+                        <section>
+                            <div class="section_title">DellSupportAssist-RCE-PoC</div>
+                            <div class="about_section">
+                            <span style="display:block;">⛈ Dell SupportAssist RCE Proof of Concept</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; HTML</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 1</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://medium.com/@andripwn/waf-405-bypassed-c6a853653486" target="_blank">
+                        <section>
+                            <div class="section_title">waf-bypass</div>
+                            <div class="about_section">
+                            <span style="display:block;">🤖 Waf 405 Bypassed Reflected XSS</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 1</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://medium.com/@andripwn/xss-403-forbidden-bypass-akamai-security-write-up-b341f588efb5" target="_blank">
+                        <section>
+                            <div class="section_title">akamaisec-bypass</div>
+                            <div class="about_section">
+                            <span style="display:none;">🤖 XSS Bypass Akamai Security Write up.</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:none;"><i class="fas fa-code"></i>&nbsp; null</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 2</span>
+                            </div>
+                        </section>
+                        </a></div>
+      </div>
+      <div id="forks" style="display: block;">
+        <h1>Support.</h1>
+        <div class="projects" id="forks_section">
+                        <a href="https://paypal.me/andripwn" target="_blank">
+                        <section>
+                            <div class="section_title">PAYPAL</div>
+                            <div class="about_section">
+                            <span style="display:block;"></span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:none;"><i class="fas fa-code"></i>&nbsp; null</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 6</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://www.facebook.com/pwn0day" target="_blank">
+                        <section>
+                            <div class="section_title">FACEBOOK</div>
+                            <div class="about_section">
+                            <span style="display:block;"></span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:none;"><i class="fas fa-code"></i>&nbsp; null</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a></div>
+      </div>
+      <div id="blog_section">
+        <h1>Blog.</h1>
+        <div id="blogs"></div>
+      </div>
+      <div id="footer">
+        <a href="https://github.com/pwn0sec" target="_blank">made on earth by a human</a>
+      </div>
+    </div>
+    <script type="text/javascript">
+      setTimeout(function() {
+        document.getElementById("loading").classList.add("animated");
+        document.getElementById("loading").classList.add("fadeOut");
+        setTimeout(function() {
+          document.getElementById("loading").classList.remove("animated");
+          document.getElementById("loading").classList.remove("fadeOut");
+          document.getElementById("loading").style.display = "none";
+        }, 800);
+      }, 1500);
+      $.getJSON("blog.json", function(blog) {
+        blog = blog || [];
+        if (blog.length == 0) {
+          return (document.getElementById("blog_section").style.display =
+            "none");
+        }
+        for (var i = 0; i < blog.length; i++) {
+          $("#blogs").append(`
+            <a href="./blog/${blog[i].url_title}/" target="_blank">
+                <section>
+                    <img src="./blog/${blog[i].url_title}/${blog[i].top_image}">
+                    <div class="blog_container">
+                        <div class="section_title">${blog[i].title}</div>
+                        <div class="about_section">
+                            ${blog[i].sub_title}
+                        </div>
+                    </div>
+                </section>
+            </a>
+            `);
+        }
+      }).fail(function() {
+        return (document.getElementById("blog_section").style.display = "none");
+      });
+    </script>
+
+    <script>
+      const magicProjectsGrid = new MagicGrid({
+        container: "#work_section",
+        animate: false,
+        gutter: 30, // default gutter size
+        static: true,
+        useMin: false,
+        maxColumns: 2,
+        useTransform: true
+      });
+
+      const magicForksGrid = new MagicGrid({
+        container: "#forks_section",
+        animate: false,
+        gutter: 30, // default gutter size
+        static: true,
+        useMin: false,
+        maxColumns: 2,
+        useTransform: true
+      });
+
+      $("document").ready(() => {
+        magicProjectsGrid.listen();
+        magicForksGrid.listen();
+      });
+    </script>
+  
+
+</body></html>
